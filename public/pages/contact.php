@@ -19,8 +19,8 @@
 		<h2><a href="../../index.php" style="color: black;">Atcon.kz</a></h2>
 		<nav>
 			<li><a href="../../index.php" style="color: black;">Главная</a></li>
-			<li><a href="#" style="color: black;">Архив</a></li>
-			<li><a href="contact.php" style="color: black;">Контакты</a></li>
+			<li><a href="archive.php" style="color: black;">Архив</a></li>
+			<li><a href="#" style="color: black;">Контакты</a></li>
 		</nav>
     </header>
     

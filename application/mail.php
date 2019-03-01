@@ -8,4 +8,8 @@ $headers = array(
     'X-Mailer' => 'PHP/' . phpversion()
 );
 
-mail($to, $subject, $message, $headers);
+$result = mail($to, $subject, $message, $headers);
+
+if($result) {
+    header('Location: ../index.php');
+}
