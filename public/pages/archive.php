@@ -3,6 +3,10 @@
 require_once '../../application/db.php';
 $pdo = new DataBase();
 
+$result = $pdo->pdo->query('SELECT * FROM archive;');
+$result = $result->fetchAll(PDO::FETCH_ASSOC);
+
+$post = $result;
 ?>
 
 <!DOCTYPE html>
@@ -34,9 +38,9 @@ $pdo = new DataBase();
 
 	<section class="features">
 		<h3 class="title">Для Акционеров и партнеров</h3>
-		<p><?php=$resutl[0]['rus'];?></p>
+		<p><?php echo $post[0]['rus'];?></p>
 		<hr>
-        <p><?php=$resutl[0]['kaz'];?></p>
+        <p><?php echo $post[0]['kaz'];?></p>
 		
 	</section>
 

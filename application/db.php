@@ -5,7 +5,7 @@ class DataBase {
     public $pdo;
     protected $driver = 'mysql';
     protected $host = 'localhost';
-    protected $dbname = 'learn_sql';
+    protected $dbname = 'atcon';
     protected $charset = 'utf8';
     protected $port = 3306;
     protected $login = 'root';
@@ -32,3 +32,4 @@ class DataBase {
             exit('Нет подключение к Базе данных. Ошибка: ' . $e->getMessage());
         }
     }
+}
